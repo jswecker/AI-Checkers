@@ -1,5 +1,0 @@
-Alina Changes:
-
-- Added a functionality of alpha beta prunning
-- Fixed end of game result when player 1 or player 2
-- Worked on the depth issue

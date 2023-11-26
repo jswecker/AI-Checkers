@@ -79,7 +79,7 @@ def possibleLegalActions(player, board):
                                 newBoard[row][col] = 0 #sets current king position to empty 
                                 possibleActions.append(newBoard)
                         #checks to see if there exists red piece diagonalky for king left for capture
-                        if(row > 1 and col < 6 and col > 0 and row < 7 and (board[row + 1][col - 1] == 2 or board[row + 1][col - 1] == 4)): 
+                        if(row > 1 and col < 6 and col > 0 and row < 6 and (board[row + 1][col - 1] == 2 or board[row + 1][col - 1] == 4)): 
                             if(board[row + 2][col - 2] == 0): #checks to see if there exists empty space next to red piece
                                 newBoard = deepcopy(board)
                                 newBoard[row + 1][col - 1] = 0 #sets an empty space to red piece position

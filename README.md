@@ -46,13 +46,13 @@ This project is primarily targeted towards board game enthusiasts, checker playe
 
 1. Start screen to select level of difficulty
 
-![](GUI/startscreen.png?raw=true=100x100) 
+![](GUI/startscreen.png?raw=true=50x50) 
 
 
 
 2. Populated board at beginning of game
 
-![](GUI/game.png?raw=true=150x150)
+![](GUI/game.png?raw=true=25x25)
 
 3. Board mid game with kings
 

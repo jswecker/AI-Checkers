@@ -43,10 +43,10 @@ This project is primarily targeted towards board game enthusiasts, checker playe
 * Game displays who won and offers an option to play again or quit
 
 ## Visuals
-![Start screen to select difficulty level](https://github.com/sarahrambo/ai-chekers/main/GUI/startscreen.png?raw=true)
-![Populated board at beginning of game](GUI/game.jpg?raw=true)
-![Board mid game with kings!](GUI/kings.jpg?raw=true)
-![End screen at completion of game](/GUI/endscreen.png?raw=true "test")
+![](/GUI/startscreen.png?raw=true "Start screen to select difficulty level")
+![](GUI/game.png?raw=true "Populated board at beginning of game")
+![](GUI/kings.png?raw=true "Board mid game with kings")
+![](GUI/endscreen.png?raw=true "End screen at completion of game")
 
 
 

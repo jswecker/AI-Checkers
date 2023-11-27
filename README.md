@@ -43,8 +43,20 @@ This project is primarily targeted towards board game enthusiasts, checker playe
 * Game displays who won and offers an option to play again or quit
 
 ## Visuals
-![](/GUI/startscreen.png?raw=true "Start screen to select difficulty level") ![](GUI/game.png?raw=true "Populated board at beginning of game")
-![](GUI/kings.png?raw=true "Board mid game with kings") ![](GUI/endscreen.png?raw=true "End screen at completion of game")
+
+1. Start screen to select level of difficulty
+![](GUI/startscreen.png?raw=true=250x250) 
+
+
+
+2. Populated board at beginning of game
+![](GUI/game.png?raw=true=250x250)
+
+3. Board mid game with kings
+![](GUI/kings.png?raw=true=250x250) 
+
+4. End screen at completion of game
+![](GUI/endscreen.png?raw=true=250x250)
 
 
 

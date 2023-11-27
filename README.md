@@ -46,21 +46,21 @@ This project is primarily targeted towards board game enthusiasts, checker playe
 
 1. Start screen to select level of difficulty
 
- <img src="GUI/startscreen.png" width="100" height="100">
+ <img src="GUI/startscreen.png" width="250" height="250">
 
 
 2. Populated board at beginning of game
 
- <img src="GUI/game.png" width="100" height="100">
+ <img src="GUI/game.png" width="250" height="250">
 
 
 3. Board mid game with kings
 
- <img src="GUI/kings.png" width="100" height="100">
+ <img src="GUI/kings.png" width="250" height="250">
 
 4. End screen at completion of game
 
- <img src="GUI/endscreen.png" width="100" height="100">
+ <img src="GUI/endscreen.png" width="250" height="250">
 
 
 

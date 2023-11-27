@@ -1,5 +1,0 @@
-Alina Changes:
-
-- Fixed ai accomdation with legal moves method 
-- Fixed backend moves in legal actions method
-- Fixed Minimax

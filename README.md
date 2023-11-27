@@ -48,21 +48,26 @@ This project is primarily targeted towards board game enthusiasts, checker playe
 
  <img src="GUI/startscreen.png" width="250" height="250">
 
+<br/><br/>
 
 2. Populated board at beginning of game
 
  <img src="GUI/game.png" width="250" height="250">
+
+<br/><br/>
 
 
 3. Board mid game with kings
 
  <img src="GUI/kings.png" width="250" height="250">
 
+ <br/><br/>
+
 4. End screen at completion of game
 
  <img src="GUI/endscreen.png" width="250" height="250">
 
-
+<br/><br/>
 
 
 ## Future Work

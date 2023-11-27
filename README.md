@@ -1,92 +1,62 @@
 # AI-Checkers
 
 
-
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://git.cs.vt.edu/sarahrambo/ai-checkers.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://git.cs.vt.edu/sarahrambo/ai-checkers/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
 ## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+Checkers is a well known and common 2-player board game that is played around the world. It has been relatively overlooked in the AI game world, with most focus being directed towards more complex games like chess and Go. <p>***We created an interactive checkers AI that is competitive with strong human players, equipped with its own strategies, to complete a challenging and thoughtful game of checkers.***<br>
+<p>This program includes a fully functioning GUI which allows users to select from 3 levels of difficulty. After completing a game, users can chose to restart a new game or quit and close the GUI.
+<br>
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+## AI Algorithm
+
+This program utilizes Mini-Maxing with alpha beta pruning to determine the next best move. The user is the maximizing player while the AI is the minimizing player. Alpha beta prunig was implemented to prune poor moves and save computaion time. A heuristic evaluation function is used to evaluation each move, with more weights on more prominent features (ex. red/black kings has more weights compared to the regular red/black pieces).
+
+<p>Depth was used to reflect varying levels of difficulty, with depth sizes of 2, 3, and 4 being easy, medium, and hard, respectively. Note that as the depth level increases, a slight delay occurs on each move of the AI. This occurs because greater depth size results in a higher time complexity to generate and evaluate all possible moves.<br>
+
 
 ## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+1. Clone the repository
+```s
+git clone https://git.cs.vt.edu/sarahrambo/ai-checkers.git
+```
+
+2. Install the dependancies using the provided requirements.txt file
+```s
+pip install -r requirements.txt
+
+```
+3. Launch the program and being playing checkers
+```s
+py CheckersGUI.py
+```
 
 ## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+This project is primarily targeted towards board game enthusiasts, checker players and individuals who might want to improve their game skills. Users should have prior knowledge of the rules and end goal of checkers, and will be able to interact with a graphical user interface to input moves and view opponent moves. 
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+## Flow
+* Human player launches the AI-integrated checkers game
+* Human player selects the desired difficulty level of the AI opponent
+* Program populates the board with tiles and game pieces
+* Human player makes a move*
+* AI opponent makes a move*
+* Repeat * process until one player wins the game
+* Game displays who won and offers an option to play again or quit
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+## Future Work
+* Implementation of double and triple jumps
+* Creation of a hints or move recommendation system for user
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+## Authors and Acknowledgment
+This project was created as an assignment for Virginia Tech's CS 5804: Intro to Artificial Intelligence. We'd like to express our gratitude to the teaching staff of this course, and especially to Dr. Yinlin Chen for a great semester. 
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+<p>This project was made possible through the collaboration of<br>
 
-## License
-For open source projects, say how it is licensed.
+* Alina Bhatti
+* Liam Davis-Wallace
+* Alex Marrero
+* Sarah Ramboyong
+* John Swecker
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+

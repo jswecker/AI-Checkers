@@ -1,0 +1,23 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: AI-checkers
+message: 'If you use this software, please cite it as below.'
+type: software
+authors:
+  - given-names: Alina
+    family-names: Bhatti
+  - given-names: Liam
+    family-names: Davis-Wallace
+  - given-names: Alex
+    family-names: Marrero
+  - given-names: Sarah
+    family-names: Ramboyong
+  - given-names: John
+    family-names: Swecker
+abstract: >-
+  We created an interactive checkers AI that is competitive
+  with strong human players, equipped with its own
+  strategies, to complete a challenging and thoughtful game
+  of checkers.
